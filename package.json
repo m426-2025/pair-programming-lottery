@@ -1,0 +1,35 @@
+{
+  "name": "pair-programming-lottery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "npx eslint",
+    "test": "npx jest",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m426-2025/pair-programming-lottery.git"
+  },
+  "keywords": [],
+  "author": "Patrick bucher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m426-2025/pair-programming-lottery/issues"
+  },
+  "homepage": "https://github.com/m426-2025/pair-programming-lottery#readme",
+  "description": "Lottoziehung für Pair Programming",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "type": "module"
+}

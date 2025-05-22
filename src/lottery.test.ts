@@ -1,4 +1,4 @@
-import { drawLottery } from "./lottery";
+import { betInLottery, drawLottery, Draft} from "./lottery";
 
 test("drawLottery gibt gültige Zahlen im erlaubten Bereich zurück", () => {
   const draft = drawLottery();
@@ -13,3 +13,10 @@ test("drawLottery gibt gültige Zahlen im erlaubten Bereich zurück", () => {
   expect(draft.extraNumber).toBeGreaterThanOrEqual(1);
   expect(draft.extraNumber).toBeLessThanOrEqual(6);
 });
+
+test("betInLottery gibt '0' zurück bei keinem Treffer", () => {
+  const bet: Draft = {numbers: [1, 2, 3, 4, 5, 6], extraNumber : 1};
+  const draft: Draft = {numbers: [10, 11, 12, 13, 14 ,15], extraNumber : 2};
+
+  expect(betInLottery(bet, draft)).toBe("0");
+})

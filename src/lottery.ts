@@ -18,6 +18,10 @@ export function drawLottery(): Draft {
 }
 
 export function betInLottery(bet: Draft, draft: Draft): string {
-  // TODO: compare bet against draft, return result
-  return "";
+  const matchCount = bet.numbers.filter(n => draft.numbers.includes(n)).length;
+  const extraMatch = bet.extraNumber === draft.extraNumber;
+
+  if (matchCount == 0 && !extraMatch) return "0";
+  if (matchCount == 0 && extraMatch) return "0+";
+  return matchCount + (extraMatch ? "+" : "");
 }

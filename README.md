@@ -4,7 +4,7 @@ In dieser Aufgabe soll eine Lottoziehung mit Test-Driven Development (TDD) im Pa
 
 Im Schweizer Zahlenlotto werden sechs Zahlen von 1 bis 42 und eine Zusatzzahl von 1 bis 6 gezogen. Der Spieler kann einen entsprechenden Tipp abgeben.
 
-Die Datenstruktur `Draft` repräsentiert eine Lottiziehung und ist in der Datei `src/lottery.ts` bereits vorgegeben.
+Die Datenstruktur `Draft` repräsentiert eine Lottoziehung und ist in der Datei `src/lottery.ts` bereits vorgegeben.
 
 Die folgenden beiden Funktionen sollen im Pair Programming gemäss TDD-Vorgehen (mit Tests in `src/lottery.test.ts`) umgesetzt werden:
 
